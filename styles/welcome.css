@@ -1,0 +1,58 @@
+body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("../images/welcome-bg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h3, h5 {
+            font-family: "Arial", sans-serif;
+            color: white;
+        }
+
+        .welcome-container {
+            position: relative;
+            z-index: 1;
+
+            display: block;
+            text-align: center;
+
+            padding: 40px 60px;
+
+            background: rgba(15, 143, 194, 0.599);
+
+            backdrop-filter: blur(8px);
+
+            border-radius: 25px;
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .welcome-container h3 {
+            display: block;
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
+
+        .welcome-container h1 {
+            display: block;
+            margin: 0 0 25px 0;
+            font-size: 50px;
+        }
+
+        .welcome-container a {
+            display: block;
+        }
+
+        .click-me {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
