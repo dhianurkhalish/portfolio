@@ -1,7 +1,3 @@
-/* =========================
-   GENERAL
-   ========================= */
-
 * {
     box-sizing: border-box;
 }
@@ -49,10 +45,6 @@ body {
 
     margin: auto;
 }
-
-
-/* About Text */
-
 .about-text {
     max-width: 750px;
 }
@@ -91,10 +83,6 @@ body {
 
     color: #222;
 }
-
-
-/* Education container */
-
 .education-container {
     display: flex;
 
@@ -104,9 +92,6 @@ body {
 
     max-width: 950px;
 }
-
-
-/* Education Card */
 
 .education-card {
     display: flex;
@@ -128,15 +113,11 @@ body {
     transition: 0.25s ease;
 }
 
-
 .education-card:hover {
     transform: translateY(-5px);
 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
-
-
-/* Education Logo */
 
 .education-icon {
     width: 100px;
@@ -156,9 +137,6 @@ body {
 
     object-fit: contain;
 }
-
-
-/* Education Information */
 
 .education-info h3 {
     margin: 0 0 8px;
@@ -185,9 +163,6 @@ body {
 
     color: #888;
 }
-
-
-/* Education List */
 
 .education-info ul {
     margin: 12px 0 0;

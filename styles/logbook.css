@@ -1,40 +1,128 @@
-body {
-    background-color: #fff8c4;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #fff8c4;
+    margin: 0;
+    padding: 50px 60px;
+
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: #333;
+}
+
+
+h2 {
+    margin: 0 0 20px;
+
+    font-size: 36px;
+
+    color: #222;
+}
+
+body > p {
+    max-width: 900px;
+
+    margin: 0 0 40px;
+
+    padding: 25px 30px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+h3 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+    font-size: 25px;
+
+    color: #222;
+}
 .role-buttons {
     display: flex;
-    gap: 10px;
-    margin: 20px 0;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
 }
 
 .role-buttons button {
-    padding: 10px 20px;
+    padding: 10px 22px;
+
     border: none;
-    border-radius: 8px;
+
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+
+    color: #444;
+
+    font-size: 14px;
+
     cursor: pointer;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    transition: 0.25s ease;
+}
+
+.role-buttons button:hover {
+    transform: translateY(-2px);
+
+    background-color: white;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
 .carousel {
     position: relative;
-    width: 700px;
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
 
-    background-color: #fff3a3;
-    padding: 20px;
-    border-radius: 15px;
+    width: 100%;
+
+    max-width: 1000px;
+
+    padding: 25px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+
+    align-items: center;
 }
 
 .slider {
     display: flex;
+
     gap: 20px;
+
     overflow-x: auto;
+
     scroll-behavior: smooth;
+
     scroll-snap-type: x mandatory;
 
     width: 100%;
+
     padding: 10px;
 
     scrollbar-width: none;
@@ -45,42 +133,87 @@ body {
 }
 
 .slider img {
-    width: 600px;
-    height: 350px;
+    width: 100%;
+
+    max-width: 850px;
+
+    height: 450px;
+
     object-fit: contain;
 
     flex-shrink: 0;
+
     scroll-snap-align: center;
 
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
+    border-radius: 15px;
 
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    background-color: white;
+}
 .arrow {
     position: absolute;
+
     z-index: 2;
 
-    width: 40px;
-    height: 40px;
+    width: 42px;
+
+    height: 42px;
 
     border: none;
+
     border-radius: 50%;
 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.55);
+
     color: white;
 
     font-size: 20px;
+
     cursor: pointer;
+
+    transition: 0.25s ease;
 }
 
 .arrow.left {
-    left: 10px;
+    left: 15px;
 }
 
 .arrow.right {
-    right: 10px;
+    right: 15px;
 }
 
 .arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.75);
+
+    transform: scale(1.05);
+}
+@media screen and (max-width: 700px) {
+
+    body {
+        padding: 35px 25px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .carousel {
+        padding: 15px;
+    }
+
+    .slider img {
+        height: 300px;
+    }
+
+    .arrow {
+        width: 36px;
+        height: 36px;
+
+        font-size: 16px;
+    }
 }
