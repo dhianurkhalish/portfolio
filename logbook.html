@@ -7,6 +7,7 @@
     </head>
 
     <body>
+
         <h2>Student Logbook</h2>
 
         <p>
@@ -16,60 +17,112 @@
         </p>
 
         <h3>System Preview</h3>
+        <div class="extra-images">
 
-        <div class="role-buttons">
-            <button onclick="showRole('student')">Student</button>
-            <button onclick="showRole('lecturer')">Lecturer</button>
+            <div class="image-box">
+                <img src="images/dashboard.png" alt="Dashboard Page">
+            </div>
+
+            <div class="image-box">
+                <img src="images/login.png" alt="Login">
+            </div>
+
         </div>
 
-        <div class="carousel" id="student">
-            <button class="arrow left" onclick="scrollCarousel('student-slider', -1)">&#10094;</button>
+        <div class="role-title">
+            <h4>Student</h4>
+        </div>
+
+        <div class="carousel">
+
+            <button class="arrow left"
+                    onclick="scrollCarousel('student-slider', -1)">
+                &#10094;
+            </button>
 
             <div class="slider" id="student-slider">
-                <img src="images/register-stud.png" alt="Register Student">
-                <img src="images/index-stud.png" alt="Student Dashboard">
-                <img src="images/add-bukulog.png" alt="Add Logbook Entry">
-                <img src="images/display-bukulog-stud.png" alt="Display Logbook Entry">
-                <img src="images/display-projek-stud.png" alt="Display Project Entry">
-                <img src="images/display-rekod-stud.png" alt="Display Logbook Records">
+
+                <img src="images/register-stud.png"
+                     alt="Register Student">
+
+                <img src="images/index-stud.png"
+                     alt="Student Dashboard">
+
+                <img src="images/add-bukulog.png"
+                     alt="Add Logbook Entry">
+
+                <img src="images/display-bukulog-stud.png"
+                     alt="Display Logbook Entry">
+
+                <img src="images/display-projek-stud.png"
+                     alt="Display Project Entry">
+
+                <img src="images/display-rekod-stud.png"
+                     alt="Display Logbook Records">
+
             </div>
 
-            <button class="arrow right" onclick="scrollCarousel('student-slider', 1)">&#10095;</button>
+            <button class="arrow right"
+                    onclick="scrollCarousel('student-slider', 1)">
+                &#10095;
+            </button>
+
         </div>
 
-        <div class="carousel" id="lecturer" style="display: none;">
-            <button class="arrow left" onclick="scrollCarousel('lecturer-slider', -1)">&#10094;</button>
+        <div class="role-title">
+            <h4>Lecturer</h4>
+        </div>
+
+        <div class="carousel">
+
+            <button class="arrow left"
+                    onclick="scrollCarousel('lecturer-slider', -1)">
+                &#10094;
+            </button>
 
             <div class="slider" id="lecturer-slider">
-                <img src="images/register-lect.png" alt="Register Lecturer">
-                <img src="images/index-lect.png" alt="Lecturer Dashboard">
-                <img src="images/list-kelas-lect.png" alt="List of Classes">
-                <img src="images/list-student-lect.png" alt="List of Students">
-                <img src="images/list-bukulog-lect.png" alt="List of Logbook Entries">
-                <img src="images/display-projek-lect.png" alt="Display Project Entry">
-                <img src="images/display-rekod-lect.png" alt="Display Logbook Records">
+
+                <img src="images/register-lect.png"
+                     alt="Register Lecturer">
+
+                <img src="images/list-kelas-lect.png"
+                     alt="List of Classes">
+
+                <img src="images/list-student-lect.png"
+                     alt="List of Students">
+
+                <img src="images/list-bukulog-lect.png"
+                     alt="List of Logbook Entries">
+
+                <img src="images/display-projek-lect.png"
+                     alt="Display Project Entry">
+
+                <img src="images/display-rekod-lect.png"
+                     alt="Display Logbook Records">
+
             </div>
 
-            <button class="arrow right" onclick="scrollCarousel('lecturer-slider', 1)">&#10095;</button>
+            <button class="arrow right"
+                    onclick="scrollCarousel('lecturer-slider', 1)">
+                &#10095;
+            </button>
+
         </div>
-
         <script>
-            function showRole(role) {
-                document.getElementById("student").style.display = "none";
-                document.getElementById("lecturer").style.display = "none";
-
-                document.getElementById(role).style.display = "flex";
-            }
 
             function scrollCarousel(id, direction) {
+
                 const slider = document.getElementById(id);
+
                 const scrollAmount = 350;
 
                 slider.scrollBy({
                     left: direction * scrollAmount,
                     behavior: "smooth"
                 });
+
             }
+
         </script>
 
     </body>
