@@ -1,0 +1,78 @@
+.role-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.role-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    width: 700px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    width: 100%;
+    padding: 10px;
+
+    scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    width: 600px;
+    height: 350px;
+    object-fit: contain;
+
+    flex-shrink: 0;
+    scroll-snap-align: center;
+
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 2;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
