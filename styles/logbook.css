@@ -3,119 +3,104 @@
 }
 
 body {
-    background-color: #fff8c4;
-
     margin: 0;
     padding: 50px 60px;
-
     font-family: Arial, sans-serif;
-
+    background-color: #fff8c4;
     color: #333;
 }
 
 h2 {
     margin: 0 0 20px;
-
     font-size: 36px;
-
     color: #222;
 }
 
 body > p {
     max-width: 900px;
-
     margin: 0 0 40px;
-
     padding: 25px 30px;
-
-    background-color: rgba(255, 255, 255, 0.85);
-
+    background-color: rgba(255, 255, 255, 0.88);
     border-radius: 18px;
-
     border: 1px solid rgba(0, 0, 0, 0.05);
-
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-
     font-size: 16px;
-
     line-height: 1.8;
-
     color: #555;
 }
 
 h3 {
-    margin-top: 35px;
-    margin-bottom: 25px;
-
+    margin: 35px 0 25px;
     font-size: 25px;
-
     color: #222;
 }
 
-.role-title {
-    max-width: 1000px;
-
-    margin-top: 25px;
-    margin-bottom: 10px;
-
-    padding: 12px 20px;
-
-    background-color: rgba(255, 255, 255, 0.85);
-
-    border-radius: 12px;
-
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+h4 {
+    font-size: 18px;
+    color: #444;
+    text-transform: uppercase;
 }
 
-.role-title h4 {
-    margin: 0;
+.extra-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 0 45px;
+}
 
-    font-size: 18px;
+.image-box {
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-    color: #444;
+.image-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 
-    text-transform: uppercase;
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
 .carousel {
     position: relative;
-
     width: 100%;
-
     max-width: 1000px;
-
-    padding: 25px;
-
-    background-color: rgba(255, 255, 255, 0.85);
-
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.88);
     border-radius: 18px;
-
     border: 1px solid rgba(0, 0, 0, 0.05);
-
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-
     display: flex;
-
     align-items: center;
+    margin-bottom: 40px;
+    transition: box-shadow 0.25s ease;
+}
 
-    margin-bottom: 30px;
+.carousel:hover {
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.11);
 }
 
 .slider {
     display: flex;
-
     gap: 20px;
-
-    overflow-x: auto;
-
-    scroll-behavior: smooth;
-
-    scroll-snap-type: x mandatory;
-
     width: 100%;
-
     padding: 10px;
-
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
 
@@ -125,95 +110,48 @@ h3 {
 
 .slider img {
     width: 100%;
-
-    max-width: 850px;
-
-    height: 250px;
-
-    object-fit: contain;
-
+    max-width: 800px;
+    height: 400px;
     flex-shrink: 0;
-
+    object-fit: contain;
     scroll-snap-align: center;
-
     border-radius: 15px;
-
     border: 1px solid rgba(0, 0, 0, 0.08);
-
     background-color: white;
 }
 
 .arrow {
     position: absolute;
-
     z-index: 2;
-
     width: 42px;
-
     height: 42px;
-
     border: none;
-
     border-radius: 50%;
-
     background-color: rgba(0, 0, 0, 0.55);
-
     color: white;
-
     font-size: 20px;
-
     cursor: pointer;
-
-    transition: 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .arrow.left {
-    left: 15px;
+    left: 12px;
 }
 
 .arrow.right {
-    right: 15px;
+    right: 12px;
 }
 
 .arrow:hover {
     background-color: rgba(0, 0, 0, 0.75);
-
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
-.extra-images {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    max-width: 1000px;
-    margin-top: 40px;
-}
-
-.image-box {
-    width: 100%;
-    height: 300px;
-
-    background-color: rgba(255, 255, 255, 0.85);
-
-    border-radius: 18px;
-
-    border: 1px solid rgba(0, 0, 0, 0.05);
-
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-
-    overflow: hidden;
-}
-
-.image-box img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
+.arrow:active {
+    transform: scale(0.95);
 }
 
 @media screen and (max-width: 700px) {
-
     body {
         padding: 35px 25px;
     }
@@ -226,8 +164,22 @@ h3 {
         font-size: 22px;
     }
 
+    h4 {
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .image-box {
+        height: 250px;
+        padding: 10px;
+    }
+
     .carousel {
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .slider {
+        gap: 10px;
     }
 
     .slider img {
@@ -237,15 +189,6 @@ h3 {
     .arrow {
         width: 36px;
         height: 36px;
-
         font-size: 16px;
-    }
-
-    .extra-images {
-        grid-template-columns: 1fr;
-    }
-
-    .image-box {
-        height: 250px;
     }
 }
