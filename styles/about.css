@@ -30,20 +30,13 @@ body {
     background-color: #ffe8f4;
 }
 
-
-/* Profile Image */
-
 .profile-image {
     width: 300px;
     height: 300px;
 
     object-fit: cover;
 
-    border-radius: 50%;
-
     display: block;
-
-    margin: auto;
 }
 .about-text {
     max-width: 750px;
