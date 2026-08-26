@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffc3;
 }
 
 .sidenav {
@@ -184,4 +183,36 @@ iframe {
     border: none;
 
     display: block;
+}
+.space-title {
+    font-size: 18px;
+    font-weight: bold;
+
+    background: linear-gradient(
+        90deg,
+        #ff708a,
+        #ffca81,
+        #ffe096,
+        #88ffdf,
+        #a3d6ff,
+        #e1bbff,
+        #ff708a
+    );
+
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    animation: rainbowMove 4s linear infinite;
+}
+
+@keyframes rainbowMove {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 300% 50%;
+    }
 }

@@ -1,0 +1,673 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+
+    margin: 0;
+    padding: 40px 60px;
+
+    font-family: Arial, sans-serif;
+
+    color: #333;
+
+    background: linear-gradient(
+        135deg,
+        #fff1f8,
+        #eee6ff,
+        #e7f5ff
+    );
+
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+
+    content: "✦  ˚  ✧     ✦   ˚     ✧  ✦      ˚   ✧     ✦";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    letter-spacing: 40px;
+
+    line-height: 80px;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        twinkle 3s ease-in-out infinite alternate;
+}
+
+
+body::after {
+
+    content:
+        "˚     ✧    ✦       ˚   ✧      ✦     ˚     ✧";
+
+    color: #dcb8ff;
+
+    font-size: 12px;
+
+    letter-spacing: 55px;
+
+    line-height: 110px;
+
+    animation-delay: 1.5s;
+}
+
+
+@keyframes twinkle {
+
+    from {
+        opacity: 0.25;
+    }
+
+    to {
+        opacity: 0.9;
+    }
+}
+
+body > * {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+.title {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    margin: 10px 0 40px;
+
+    background: linear-gradient(
+        90deg,
+        #ff5c8a,
+        #ff9f43,
+        #ffd166,
+        #52d681,
+        #4dabf7,
+        #b084f5,
+        #ff5c8a
+    );
+
+    background-size: 300% 100%;
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    animation:
+        rainbow 5s linear infinite;
+}
+
+
+@keyframes rainbow {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 300% 50%;
+    }
+}
+
+.sect1,
+.sect2,
+.sect3,
+.sect4,
+.sect5,
+.sect6 {
+
+    max-width: 1000px;
+
+    margin: 0 auto 35px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border: 3px solid #ffffff;
+
+    box-shadow:
+        0 8px 20px rgba(150, 120, 180, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.sect1:hover,
+.sect2:hover,
+.sect3:hover,
+.sect4:hover,
+.sect5:hover,
+.sect6:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(150, 120, 180, 0.25);
+}
+
+.sub-title {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #ff5c8a,
+        #9b5de5,
+        #4dabf7
+    );
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+.sect1 {
+
+    min-height: 280px;
+}
+
+
+/* Subtitle */
+
+.sect1 .sub-title {
+
+    margin-bottom: 15px;
+}
+
+.sect1-content {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    width: 100%;
+}
+
+.sect1-text {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.sect1-text p {
+
+    margin: 0;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+.dhia-photo {
+
+    width: 220px;
+
+    height: 220px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #ffd6e7;
+
+    box-shadow:
+        0 8px 20px rgba(255, 92, 138, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.dhia-photo:hover {
+
+    transform:
+        rotate(3deg)
+        scale(1.05);
+
+    box-shadow:
+        0 12px 30px rgba(255, 92, 138, 0.35);
+}
+
+.sect2 {
+
+    text-align: center;
+}
+
+
+.mbti {
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    margin: 15px 0;
+
+    animation:
+        mbtiGlow 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes mbtiGlow {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+}
+
+.mbti-image {
+
+    width: 300px;
+
+    max-width: 100%;
+
+    border-radius: 20px;
+
+    margin-top: 10px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.mbti-image:hover {
+
+    transform:
+        rotate(-2deg)
+        scale(1.03);
+
+    box-shadow:
+        0 10px 25px rgba(155, 93, 229, 0.25);
+}
+
+.sect3 {
+
+    text-align: center;
+}
+
+
+.sect3 p:not(.sub-title) {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-top: 30px;
+
+    margin-bottom: 12px;
+}
+
+
+.games-image,
+.crochet-image,
+.crafting-image,
+.drawing-image {
+
+    width: 220px;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    border: 4px solid #ffffff;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.games-image:hover,
+.crochet-image:hover,
+.crafting-image:hover,
+.drawing-image:hover {
+
+    transform:
+        scale(1.08)
+        rotate(2deg);
+
+    box-shadow:
+        0 10px 25px rgba(150, 100, 200, 0.25);
+}
+
+.sect4 {
+
+    text-align: center;
+
+    min-height: 200px;
+}
+
+
+.sect4::after {
+
+    display: block;
+
+    font-size: 35px;
+
+    margin-top: 40px;
+
+    letter-spacing: 15px;
+
+    animation:
+        floatItems 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes floatItems {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-8px);
+    }
+}
+.sect5 p:not(.sub-title) {
+
+    font-size: 18px;
+
+    margin: 15px 0;
+
+    padding: 12px 18px;
+
+    background: #fff5fb;
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.sect5 p:not(.sub-title):hover {
+
+    transform: translateX(8px);
+
+    background: #ffe5f1;
+}
+
+.sect6 {
+
+    min-height: 250px;
+}
+
+
+.sect6::after {
+    display: block;
+
+    text-align: center;
+
+    font-size: 22px;
+
+    margin-top: 60px;
+
+    color: #9b5de5;
+}
+
+@media (max-width: 900px) {
+
+    body {
+
+        padding: 35px 30px;
+    }
+
+
+    .title {
+
+        font-size: 36px;
+    }
+
+
+    .dhia-photo {
+
+        width: 190px;
+
+        height: 190px;
+    }
+
+
+    .sect1-content {
+
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding: 25px 15px;
+    }
+
+
+    /* TITLE */
+
+    .title {
+
+        font-size: 28px;
+
+        line-height: 1.4;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* SECTIONS */
+
+    .sect1,
+    .sect2,
+    .sect3,
+    .sect4,
+    .sect5,
+    .sect6 {
+
+        width: 100%;
+
+        padding: 22px;
+
+        margin-bottom: 25px;
+
+        border-radius: 20px;
+    }
+
+    .sect1 {
+
+        text-align: center;
+    }
+
+
+    .sect1-content {
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .sect1-text {
+
+        width: 100%;
+    }
+
+
+    .sect1-text p {
+
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+    .dhia-photo {
+
+        width: 180px;
+
+        height: 180px;
+    }
+
+    .sub-title {
+
+        font-size: 23px;
+
+        line-height: 1.4;
+    }
+
+    .mbti {
+
+        font-size: 30px;
+    }
+
+
+    .mbti-image {
+
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    .sect3 p:not(.sub-title) {
+
+        font-size: 18px;
+
+        margin-top: 25px;
+    }
+
+
+    .games-image,
+    .crochet-image,
+    .crafting-image,
+    .drawing-image {
+
+        width: 100%;
+
+        max-width: 300px;
+
+        height: 200px;
+    }
+
+    .sect4::after {
+
+        font-size: 25px;
+
+        letter-spacing: 5px;
+
+        line-height: 1.8;
+    }
+
+    .sect5 p:not(.sub-title) {
+
+        font-size: 16px;
+
+        padding: 10px 14px;
+    }
+
+    .sect6 {
+
+        min-height: 200px;
+    }
+
+
+    .sect6::after {
+
+        font-size: 18px;
+
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    body {
+
+        padding: 20px 10px;
+    }
+
+
+    .title {
+
+        font-size: 24px;
+    }
+
+
+    .sect1,
+    .sect2,
+    .sect3,
+    .sect4,
+    .sect5,
+    .sect6 {
+
+        padding: 18px;
+    }
+
+
+    .dhia-photo {
+
+        width: 150px;
+
+        height: 150px;
+    }
+
+
+    .sub-title {
+
+        font-size: 21px;
+    }
+
+
+    .games-image,
+    .crochet-image,
+    .crafting-image,
+    .drawing-image {
+
+        height: 170px;
+    }
+}
