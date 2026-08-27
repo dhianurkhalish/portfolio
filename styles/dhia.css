@@ -12,19 +12,14 @@ body {
 
     color: #333;
 
-    background:
-        linear-gradient(
-            to top,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(255, 255, 255, 0.8) 25%,
-            rgba(255, 255, 255, 0.25) 65%,
-            rgba(255, 255, 255, 0) 100%
-        ),
-        linear-gradient(
-            135deg,
-            #dbcaff,
-            #c8e8ff
-        );
+    background: linear-gradient(
+        to bottom,
+        #eee6ff 0%,
+        #c9a9ed 25%,
+        #8b5bb8 50%,
+        #4b2375 75%,
+        #210044 100%
+    );
 
     overflow-x: hidden;
 }
