@@ -22,9 +22,8 @@ body {
         ),
         linear-gradient(
             135deg,
-            #fff1f8,
-            #eee6ff,
-            #e7f5ff
+            #dbcaff,
+            #c8e8ff
         );
 
     overflow-x: hidden;
@@ -89,21 +88,12 @@ body::after {
     }
 }
 
-
-/* Make page content appear
-   above background stars */
-
 body > * {
 
     position: relative;
 
     z-index: 1;
 }
-
-
-/* =========================
-   MAIN TITLE
-========================= */
 
 .title {
 
@@ -115,10 +105,11 @@ body > * {
 
     background: linear-gradient(
         90deg,
-        #ff5c8a,
-        #4dabf7,
-        #b084f5,
-        #ff5c8a
+        #590689,
+        #7313c2,
+        #974cdc,
+        #7313c2,
+        #590689
     );
 
     background-size: 300% 100%;
@@ -135,11 +126,9 @@ body > * {
 
 
 @keyframes rainbow {
-
     0% {
         background-position: 0% 50%;
     }
-
     100% {
         background-position: 300% 50%;
     }
@@ -165,7 +154,6 @@ body > * {
 }
 
 .sect1 {
-
     position: relative;
 
     width: 100%;
@@ -217,9 +205,6 @@ body > * {
 
     font-size: 17px;
 }
-
-
-/* DHIA PHOTO */
 
 .dhia-photo {
 
@@ -356,12 +341,6 @@ body > * {
     animation:
         rainbow 5s linear infinite;
 }
-
-
-/* =========================
-   HOBBY GRID
-========================= */
-
 .hobbies {
 
     display: grid;
@@ -490,7 +469,6 @@ body > * {
         rotate(-2deg)
         translateY(-8px);
 }
-
 .sect4 {
     position: relative;
 
@@ -516,9 +494,6 @@ body > * {
         0 10px 25px rgba(100, 70, 40, 0.15);
 }
 
-
-/* Inventory title */
-
 .sect4 .sub-title {
     position: relative;
 
@@ -526,11 +501,6 @@ body > * {
 
     margin: 0;
 }
-
-
-/* =========================
-   INVENTORY IMAGES
-========================= */
 
 .sect4 img {
     position: absolute;
@@ -544,9 +514,6 @@ body > * {
     cursor: pointer;
 }
 
-
-/* Sylus */
-
 .sylus-image {
     width: 180px;
 
@@ -557,21 +524,15 @@ body > * {
     transform: rotate(-15deg);
 }
 
-
-/* Leon */
-
 .leon-image {
     width: 200px;
 
-    left: 30%;
+    left: 25%;
 
     bottom: 5px;
 
     transform: rotate(8deg);
 }
-
-
-/* Teh O Beng */
 
 .teh-image {
     width: 160px;
@@ -583,15 +544,12 @@ body > * {
     transform: rotate(-10deg);
 }
 
-
-/* Usagi */
-
 .usagi-image {
     width: 170px;
 
     right: 28%;
 
-    top: 80px;
+    top: 70px;
 
     transform: rotate(15deg);
 }
@@ -604,6 +562,34 @@ body > * {
 
     transform: rotate(15deg);
 }
+.earphone-image {
+    width: 170px;
+
+    right: 70%;
+
+    top: 40px;
+
+    transform: rotate(15deg);
+}
+.laptop-image {
+    width: 200px;
+
+    right: 25%;
+
+    bottom: 50px;
+
+    transform: rotate(180deg);
+}
+.himalaya-image {
+    width: 130px;
+
+    right: 10%;
+
+    top: 50px;
+
+    transform: rotate(-15deg);
+}
+
 
 .sect4 img:hover {
     z-index: 20;
@@ -616,7 +602,7 @@ body > * {
 }
 
 
-.sylus-image:hover {
+.sylus-image:hover, .earphone-image:hover, .himalaya-image:hover{
     transform:
         rotate(-5deg)
         scale(1.1);
@@ -630,98 +616,86 @@ body > * {
 }
 
 
-.teh-image:hover {
+.teh-image:hover, .laptop-image:hover {
     transform:
         rotate(-3deg)
         scale(1.1);
 }
 
 
-.usagi-image:hover {
+.usagi-image:hover, .lily-image:hover {
     transform:
         rotate(5deg)
         scale(1.1);
 }
-
-.lily-image:hover {
+.laptop-image:hover {
     transform:
-        rotate(5deg)
+        rotate(170deg)
         scale(1.1);
 }
-
-
-/* =========================
-   SECTION 5
-   GOALS
-========================= */
 
 .sect5 {
-
+    position: relative;
+    max-width: 350px;
     padding: 30px;
-
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    background: rgba(231, 251, 255, 0.88);
+    text-align: center;
+    font-family: "Comic Sans MS";
+    box-shadow:
+        0 18px 15px rgba(100, 70, 40, 0.22);
+    transform:
+        rotate(-2deg);
 }
-
-
 .sect5 p:not(.sub-title) {
+    position: relative;
+    z-index: 0;
 
     font-size: 18px;
-
     margin: 15px 0;
-
     padding: 12px 18px;
 
-    background: #fff5fb;
+    background: transparent;
 
-    border-radius: 12px;
-
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
+.sect5 p:not(.sub-title)::after {
+    content: "";
+
+    position: absolute;
+
+    left: 18px;
+    bottom: 8px;
+
+    width: calc(100% - 36px);
+    height: 45%;
+
+    background: #fff176;
+
+    border-radius: 3px;
+
+    z-index: -1;
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: transform 0.4s ease;
+}
 
 .sect5 p:not(.sub-title):hover {
-
     transform: translateX(8px);
-
-    background: #ffe5f1;
 }
 
-
-/* =========================
-   SECTION 6
-   GALLERY
-========================= */
-
-.sect6 {
-
-    min-height: 250px;
-
-    padding: 30px;
-
-    margin-bottom: 30px;
-}
-
-
-.sect6::after {
-
-    display: block;
-
-    text-align: center;
-
-    font-size: 22px;
-
-    margin-top: 60px;
-
-    color: #9b5de5;
+.sect5 p:not(.sub-title):hover::after {
+    transform: scaleX(1);
 }
 
 .sect2:hover,
 .sect3:hover,
 .sect4:hover,
-.sect5:hover,
-.sect6:hover {
+.sect5:hover {
 
     transform: translateY(-5px);
 
