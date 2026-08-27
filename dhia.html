@@ -67,5 +67,36 @@
             <img src="images/laptop.png" alt="Laptop" class="laptop-image">
             <img src="images/himalaya.png" alt="Himalaya Salt Candy" class="himalaya-image">
         </div>
+        <div id="confetti-container"></div>
+
+        <script>
+            const container = document.getElementById("confetti-container");
+
+            const symbols = ["✨","❤️", "🩷", "🧡", "💛", "💚", "💙", "🩵", "💜", "💖"];
+
+            for (let i = 0; i < 50; i++) {
+
+                const confetti = document.createElement("span");
+
+                confetti.classList.add("confetti");
+
+                confetti.textContent =
+                    symbols[Math.floor(Math.random() * symbols.length)];
+
+                confetti.style.left =
+                    Math.random() * 100 + "vw";
+
+                confetti.style.animationDelay =
+                    Math.random() * 2 + "s";
+
+                confetti.style.animationDuration =
+                    2 + Math.random() * 3 + "s";
+
+                confetti.style.fontSize =
+                    10 + Math.random() * 15 + "px";
+
+                container.appendChild(confetti);
+            }
+        </script>
     </body>
 </html>
