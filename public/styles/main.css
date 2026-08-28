@@ -1,6 +1,8 @@
+```css
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 .sidenav {
     height: 100vh;
@@ -125,17 +127,18 @@ body {
     to {
         background-position: 300% 50%;
     }
-
 }
 #main {
     margin-left: 240px;
     margin-right: 400px;
     padding: 0;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 .content {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 iframe {
     width: 100%;
