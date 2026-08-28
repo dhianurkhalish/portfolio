@@ -4,11 +4,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-/* =========================
-   LEFT SIDEBAR
-========================= */
-
 .sidenav {
     height: 100vh;
 
@@ -29,11 +24,6 @@ body {
 
     z-index: 10;
 }
-
-
-/* =========================
-   SIDEBAR TITLE
-========================= */
 
 .sidebar-title {
     display: flex;
@@ -143,10 +133,6 @@ body {
 }
 
 
-/* =========================
-   PROJECT SUBNAV
-========================= */
-
 .subnav {
     max-height: 0;
 
@@ -185,10 +171,6 @@ body {
     background-color: rgba(255, 255, 255, 0.12);
 }
 
-
-/* =========================
-   DHIA'S SPACE
-========================= */
 
 .space-title {
     font-size: 18px;
@@ -229,15 +211,10 @@ body {
 
 }
 
-
-/* =========================
-   MAIN CONTENT
-========================= */
-
 #main {
     margin-left: 240px;
 
-    margin-right: 500px;
+    margin-right: 400px;
 
     padding: 0;
 
