@@ -1,47 +1,30 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
-
     min-height: 100vh;
-
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     padding: 40px;
-
     font-family: Arial, sans-serif;
-
     background-image: url("../images/contact-bg.png");
     background-size: cover;
     background-position: center;
-
     color: #333;
 }
 .contact-card {
     width: 100%;
-
     max-width: 700px;
-
     padding: 50px;
-
     background-color: white;
-
     border-radius: 25px;
-
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-
     text-align: center;
 }
-
 .contact-card h2 {
     margin: 0 0 12px;
-
     font-size: 38px;
-
     color: #222;
 }

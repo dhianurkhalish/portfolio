@@ -1,101 +1,47 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     padding: 50px 60px;
-
     font-family: Arial, sans-serif;
-
     background-color: #cdf1d4;
-
     color: #333;
 }
-
 h2 {
     margin: 0 0 10px;
-
     font-size: 36px;
-
     color: #222;
 }
-
 body > p {
     margin: 0 0 40px;
-
     font-size: 16px;
-
     color: #666;
-
     line-height: 1.6;
 }
-
 .certification-container {
     display: flex;
-
     flex-direction: column;
-
     gap: 35px;
-
     max-width: 850px;
 }
 .certification {
     width: 100%;
-
     padding: 25px;
-
     background-color: white;
-
     border-radius: 20px;
-
     border: 1px solid rgba(0, 0, 0, 0.05);
-
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
-
     transition: transform 0.25s ease,
                 box-shadow 0.25s ease;
 }
-
 .certification:hover {
     transform: translateY(-5px);
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
-
 .certification-image {
     display: block;
-
     width: 100%;
-
     height: auto;
-
     border-radius: 12px;
-}
-
-@media screen and (max-width: 800px) {
-
-    body {
-        padding: 40px 30px;
-    }
-
-    .certification-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-@media screen and (max-width: 500px) {
-
-    body {
-        padding: 30px 20px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    .certification-container {
-        grid-template-columns: 1fr;
-    }
 }
