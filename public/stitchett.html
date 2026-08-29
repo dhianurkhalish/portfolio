@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Academic Projects</title>
+        <link rel="stylesheet" href="styles/projects.css">
+        <style>
+            body{
+                background: #ffe2e2;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="images/usagicon.png">
+    </head>
+    <body>
+        <h4>Stitchett's Ordering System</h4>
+        <p>A database-based ordering system developed for an Access Database Design and Development course. The system manages customer, product, and order information using Microsoft Access. The project focuses on database design, data management, queries, forms, and reports.</p>
+        <h5>Forms</h5>
+        <div class="carousel">
+            <button class="arrow left"
+                    onclick="scrollCarousel('ictform-slider', -1)">
+                &#10094;
+            </button>
+            <div class="slider" id="ictform-slider">
+                <div class="slide-item">
+                    <img src="images/ict (1).png" alt="login">
+                    <span>Login Page</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (2).png" alt="home">
+                    <span>Home Page</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (3).png" alt="order-form">
+                    <span>Order Form</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (5).png" alt="staff-form">
+                    <span>Staff Form</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (6).png" alt="cust-form">
+                    <span>Customer Form</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (7).png" alt="prod-form">
+                    <span>Product Form</span>
+                </div>
+            </div>
+            <button class="arrow right"
+                    onclick="scrollCarousel('ictform-slider', 1)">
+                &#10095;
+            </button>
+        </div>
+
+        <h5>Reports</h5>
+        <div class="carousel">
+            <button class="arrow left"
+                    onclick="scrollCarousel('ictrepslider', -1)">
+                &#10094;
+            </button>
+            <div class="slider" id="ictrep-slider">
+                <div class="slide-item">
+                    <img src="images/ict (4).png" alt="receipt">
+                    <span>Receipt</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (8).png" alt="cust-rep">
+                    <span>Customer Report</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (9).png" alt="staff-rep">
+                    <span>Staff Report</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (10).png" alt="prod-rep">
+                    <span>Products Report</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (11).png" alt="ship-rep">
+                    <span>Shipments Report</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (12).png" alt="annual-rep">
+                    <span>Annual Sales Report</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (13).png" alt="month-rep">
+                    <span>Monthly Report</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (14).png" alt="day-rep">
+                    <span>Daily Report</span>
+                </div>
+            </div>
+            <button class="arrow right"
+                    onclick="scrollCarousel('ictrep-slider', 1)">
+                &#10095;
+            </button>
+        </div>
+
+        <h5>Tables and Relationship Diagram</h5>
+        <div class="carousel">
+            <button class="arrow left"
+                    onclick="scrollCarousel('icttable-slider', -1)">
+                &#10094;
+            </button>
+            <div class="slider" id="icttable-slider">
+                <div class="slide-item">
+                    <img src="images/ict (15).png" alt="cust-table">
+                    <span>Customer Table</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (16).png" alt="order-table">
+                    <span>Order Table</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (17).png" alt="prod-table">
+                    <span>Products Table</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (18).png" alt="rec-table">
+                    <span>Record Table</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (19).png" alt="ship-table">
+                    <span>Shipments Table</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (20).png" alt="staff-table">
+                    <span>Staff Table</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/ict (21).png" alt="relationship">
+                    <span>Relationship</span>
+                </div>
+            </div>
+            <button class="arrow right"
+                    onclick="scrollCarousel('icttable-slider', 1)">
+                &#10095;
+            </button>
+        </div>
+        <script>
+
+            function scrollCarousel(id, direction) {
+
+                const slider = document.getElementById(id);
+
+                const scrollAmount = 350;
+
+                slider.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: "smooth"
+                });
+
+            }
+
+        </script>
+
+    </body>
+</html>

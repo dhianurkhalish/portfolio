@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Academic Projects</title>
+        <link rel="stylesheet" href="styles/projects.css">
+        <style>
+            body{
+                background: #dedede;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="images/usagicon.png">
+    </head>
+    <body>
+        <h4>Mixue Ordering System</h4>
+        <p>A Java-based ordering system developed for an OOP course, implementing core Object-Oriented Programming concepts such as classes, objects, inheritance, encapsulation, and polymorphism. Developed using IntelliJ IDEA.</p>
+
+        <div class="carousel">
+
+            <button class="arrow left"
+                    onclick="scrollCarousel('mixue-slider', -1)">
+                &#10094;
+            </button>
+
+            <div class="slider" id="mixue-slider">
+                <div class="slide-item">
+                    <img src="images/mixue1.png" alt="welcome">
+                    <span>Welcome Page</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/mixue2.png" alt="order-menu">
+                    <span>Order Menu</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/mixue3.png" alt="drink-menu">
+                    <span>Drinks Menu</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/mixue4.png" alt="icecream-menu">
+                    <span>Ice Cream Menu</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/mixue5.png" alt="cart">
+                    <span>Cart</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/mixue6.png" alt="edit-order">
+                    <span>Edit Order</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/mixue7.png" alt="checkout">
+                    <span>Checkout</span>
+                </div>
+                <div class="slide-item">
+                    <img src="images/mixue8.png" alt="order-confirm">
+                    <span>Order Confirmation</span>
+                </div>
+
+            </div>
+
+            <button class="arrow right"
+                    onclick="scrollCarousel('mixue-slider', 1)">
+                &#10095;
+            </button>
+
+        </div>
+        <script>
+
+            function scrollCarousel(id, direction) {
+
+                const slider = document.getElementById(id);
+
+                const scrollAmount = 350;
+
+                slider.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: "smooth"
+                });
+
+            }
+
+        </script>
+
+    </body>
+</html>
