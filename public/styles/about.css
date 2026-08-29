@@ -10,42 +10,53 @@ body {
 }
 .about-section {
     width: 100%;
-    min-height: 430px;
-    padding: 70px 80px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
+    min-height: 480px;
     background-color: #ffe8f4;
     position: relative;
+    padding: 40px 60px 30px 0;
+    overflow: hidden;
 }
 .profile-image {
-    width: 450px;
-    height: 350px;
-    object-fit: cover;
-    display: block;
     position: absolute;
     left: 0;
     bottom: 0;
-    filter:
-        drop-shadow(
-            0 10px 12px
-            rgba(0, 0, 0, 0.2)
-        );
+    width: 440px;
+    height: auto;
+    display: block;
+    z-index: 1;
+    pointer-events: none;
+    filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.18));
 }
 .about-text {
-    max-width: 750px;
-    margin-left: 360px;
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
 }
 .about-text h1 {
-    margin: 0 0 20px;
+    margin: 30px 0 15px 70px;
     font-size: 40px;
     color: #222;
 }
-.about-text p {
-    margin: 0 0 15px;
+.about-text .para1 {
+    margin: 50px 0 15px 250px;
     font-size: 16px;
     line-height: 1.7;
     color: #555;
+    max-width: 700px;
+}
+.about-text .para2 {
+    margin: 0 0 15px 350px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 620px;
+}
+.about-text .para3 {
+    margin: 0 0 15px 470px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 550px;
 }
 .education-section {
     width: 100%;
