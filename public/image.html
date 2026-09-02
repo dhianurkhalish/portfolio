@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Academic Projects</title>
+        <link rel="stylesheet" href="styles/projects.css">
+        <style>
+            body{
+                background: #fbc8ec;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="images/usagicon.png">
+    </head>
+    <body>
+        <h4>Diabetic Retinopathy Classification</h4>
+        <p>This project focused on developing a deep learning-based system to classify diabetic retinopathy using retinal fundus images. 
+            The main objective was to classify the images into five stages of diabetic retinopathy using a pre-trained ResNet50 model with a Softmax classifier. 
+            Developed using <span class="tools">MATLAB</span>, the project involved image preprocessing, model training, and testing using a diabetic retinopathy image dataset. 
+            Through this project, I gained an introduction to applying deep learning and image classification to a real-world medical imaging problem.</p>
+        <div class="carousel">
+
+            <button class="arrow left"
+                    onclick="scrollCarousel('image-slider', -1)">
+                &#10094;
+            </button>
+
+            <div class="slider" id="image-slider">
+                <div class="slide-item">
+                    <img src="images/image (1).png" alt="Page 1">
+                </div>
+                <div class="slide-item">
+                    <img src="images/image (2).png" alt="Page 2">
+                </div>
+                <div class="slide-item">
+                    <img src="images/image (3).png" alt="Page 3">
+                </div>
+            </div>
+
+            <button class="arrow right"
+                    onclick="scrollCarousel('image-slider', 1)">
+                &#10095;
+            </button>
+
+        </div>
+        <script>
+
+            function scrollCarousel(id, direction) {
+
+                const slider = document.getElementById(id);
+
+                const scrollAmount = 350;
+
+                slider.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: "smooth"
+                });
+
+            }
+
+        </script>
+
+    </body>
+</html>

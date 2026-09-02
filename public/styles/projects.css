@@ -7,6 +7,9 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
 }
+.tools{
+    font-weight: bold;
+}
 h2 {
     margin: 0 0 20px;
     font-size: 36px;

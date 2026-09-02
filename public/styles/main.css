@@ -154,42 +154,69 @@ iframe {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 40px 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
     background: #ffedc3;
     overflow: hidden;
     z-index: 5;
 }
 .random-card {
-    padding: 12px;
-    margin-bottom: 20px;
+    padding: 14px;
+    margin-bottom: 15px;
     background: white;
     border: 2px solid #333;
     border-radius: 16px;
     box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.12);
     transform: rotate(1deg);
 }
-.random-card:nth-child(2) {
-    transform: rotate(-1.5deg);
+.corner-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 10px;
 }
-.random-card:nth-child(3) {
-    transform: rotate(1deg);
+.corner-header h3 {
+    margin: 0;
+    font-size: 18px;
 }
-.random-card h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 17px;
+.corner-header span {
+    font-size: 13px;
 }
-.random-card p {
-    margin: 8px 0;
+.tiny-text {
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    font-style: italic;
+    color: #888;
+}
+.corner-title {
+    margin: 0 0 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.fact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 6px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+.fact:hover {
+    transform: translateX(4px);
+    background: #fff5df;
+}
+.fact span {
+    width: 22px;
+    text-align: center;
     font-size: 14px;
-    line-height: 1.5;
 }
-.random-card .status {
+.fact p {
+    margin: 0;
     font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.6;
+    line-height: 1.3;
 }
 .mini-card {
     text-align: center;
@@ -211,7 +238,7 @@ iframe {
     text-align: center;
 }
 .slideshow {
-    width: 70%;
+    width: 90%;
     aspect-ratio: 3 / 4;
     overflow: hidden;
     border-radius: 10px;
@@ -231,23 +258,6 @@ iframe {
 }
 .slide.active {
     opacity: 1;
-}
-.slide-dots {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    margin-top: 12px;
-}
-.dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #ccc;
-    transition: all 0.3s ease;
-}
-.dot.active {
-    background: #0aa3d6;
-    transform: scale(1.3);
 }
 @media (max-width: 1200px) {
     .right-sidebar {
