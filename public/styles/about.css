@@ -10,7 +10,7 @@ body {
 }
 .about-section {
     width: 100%;
-    min-height: 480px;
+    min-height: 400px;
     background-color: #ffe8f4;
     position: relative;
     padding: 40px 60px 30px 0;
@@ -20,7 +20,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 440px;
+    width: 400px;
     height: auto;
     display: block;
     z-index: 1;
@@ -33,26 +33,26 @@ body {
     max-width: 1200px;
 }
 .about-text h1 {
-    margin: 30px 0 15px 70px;
+    margin: 0px 0 15px 70px;
     font-size: 40px;
     color: #222;
 }
 .about-text .para1 {
-    margin: 50px 0 15px 250px;
+    margin: 20px 0 15px 200px;
     font-size: 16px;
     line-height: 1.7;
     color: #555;
     max-width: 700px;
 }
 .about-text .para2 {
-    margin: 0 0 15px 350px;
+    margin: 20px 0 15px 300px;
     font-size: 16px;
     line-height: 1.7;
     color: #555;
     max-width: 620px;
 }
 .about-text .para3 {
-    margin: 0 0 15px 470px;
+    margin: 20px 0 15px 350px;
     font-size: 16px;
     line-height: 1.7;
     color: #555;
@@ -165,4 +165,32 @@ body {
     font-size: 15px;
     line-height: 1.6;
     color: #666;
+}
+@media (max-width: 800px) {
+    .profile-image {
+        display: none;
+    }
+    .about-section {
+        padding: 30px 40px;
+    }
+    .about-text {
+        max-width: 100%;
+    }
+    .about-text h1,
+    .about-text .para1,
+    .about-text .para2,
+    .about-text .para3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about-text h1 {
+        margin-top: 0;
+    }
+    .about-text .para1 {
+        margin-top: 20px;
+    }
+    .about-text .para2,
+    .about-text .para3 {
+        margin-top: 0;
+    }
 }

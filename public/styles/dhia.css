@@ -462,3 +462,14 @@ body > * {
         opacity: 0;
     }
 }
+@media (max-width: 800px) {
+    .dhia-photo {
+        display: none;
+    }
+    .sect1 {
+        padding: 30px;
+    }
+    .sect1-text {
+        width: 100%;
+    }
+}
