@@ -166,7 +166,7 @@ body {
     line-height: 1.6;
     color: #666;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .profile-image {
         display: none;
     }

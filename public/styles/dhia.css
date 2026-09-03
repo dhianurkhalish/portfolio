@@ -462,7 +462,7 @@ body > * {
         opacity: 0;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .dhia-photo {
         display: none;
     }
