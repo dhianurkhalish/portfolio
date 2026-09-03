@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Academic Projects</title>
+        <link rel="stylesheet" href="styles/projects.css">
+        <style>
+            body{
+                background: #ffdada;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="images/usagicon.png">
+    </head>
+    <body>
+        <h4>Object Recognition Using Convolutional Neural Networks</h4>
+        <p>A CNN-based image classification project developed using <span class="tools">MATLAB</span> to recognize and classify four types of fruits: Apple, Banana, Grape, and Pineapple. 
+            The model was trained using a custom dataset of 400 images, with image preprocessing and data augmentation applied to improve classification performance and reduce overfitting. 
+            The project involved developing and evaluating a Convolutional Neural Network to categorize fruit images into their respective classes. 
+            Through this project, I gained practical experience in image preprocessing, data augmentation, CNN model development, and image classification using <span class="tools">MATLAB</span>.
+</p>
+        <div class="carousel">
+
+            <button class="arrow left"
+                    onclick="scrollCarousel('ai-slider', -1)">
+                &#10094;
+            </button>
+
+            <div class="slider" id="ai-slider">
+                <div class="slide-item">
+                    <img src="images/ai (1).png" alt="Page 1">
+                </div>
+                <div class="slide-item">
+                    <img src="images/ai (2).png" alt="Page 2">
+                </div>
+                <div class="slide-item">
+                    <img src="images/ai (3).png" alt="Page 3">
+                </div>
+                <div class="slide-item">
+                    <img src="images/ai (4).png" alt="Page 4">
+                </div>
+                <div class="slide-item">
+                    <img src="images/ai (5).png" alt="Page 5">
+                </div>
+                <div class="slide-item">
+                    <img src="images/ai (6).png" alt="Page 6">
+                </div>
+                <div class="slide-item">
+                    <img src="images/ai (7).png" alt="Page 7">
+                </div>
+                <div class="slide-item">
+                    <img src="images/ai (8).png" alt="Page 8">
+                </div>
+                <div class="slide-item">
+                    <img src="images/ai (9).png" alt="Page 9">
+                </div>
+            </div>
+
+            <button class="arrow right"
+                    onclick="scrollCarousel('ai-slider', 1)">
+                &#10095;
+            </button>
+
+        </div>
+        <script>
+
+            function scrollCarousel(id, direction) {
+
+                const slider = document.getElementById(id);
+
+                const scrollAmount = 350;
+
+                slider.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: "smooth"
+                });
+
+            }
+
+        </script>
+
+    </body>
+</html>
